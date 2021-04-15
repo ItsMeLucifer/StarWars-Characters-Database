@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+}
+@font-face {
+  font-family: 'Starjedi';
+  src: local('Starjedi'),url(./components//assets//fonts/starjedi/Starjedi.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Starjout';
+  src: local('Starjout'),url(./components//assets//fonts/starjedi/Starjout.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Starhol';
+  src: local('Starhol'),url(./components//assets//fonts/starjedi/Starjhol.ttf) format('truetype');
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
