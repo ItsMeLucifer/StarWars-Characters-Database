@@ -11,7 +11,8 @@ interface Character {
 }
 interface Film {
     characters: Array<string>,
-    title: string
+    title: string,
+    episode_id: number
 }
 interface CharactersResult {
     data: Array<Character>
@@ -66,7 +67,7 @@ export const searchFilm = (film_number: number) => {
         dispatch({
             type: 'SEARCH_FILM',
             payload: {
-                film: film_number
+                film_number: film_number
             }
         })
     }

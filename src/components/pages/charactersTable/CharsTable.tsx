@@ -73,7 +73,7 @@ class CharsTable extends Component<CharsTableProps> {
                 <div className='char-table'>
                     <div className='table-row-2'>
                         <input placeholder='Search name' type='text' className='search-input' value={this.state.name} onChange={e => this.searchName(e.target.value)} />
-                        <select value={this.state.film} onChange={e => parseInt(e.target.value) !== 0 && this.searchFilm(parseInt(e.target.value))}>
+                        <select value={this.state.film} onChange={e => this.searchFilm(parseInt(e.target.value))}>
                             <option value={0}>Select a movie</option>
                             <option value={1}>A New Hope</option>
                             <option value={2}>The Empire Strikes Back</option>
@@ -98,6 +98,7 @@ class CharsTable extends Component<CharsTableProps> {
                     </div>
                     <div className='main-space'>
                         <InfiniteScroll
+                            key={0}
                             style={{ width: '100%' }}
                             pageStart={0}
                             loadMore={() => this.loadMoreCharacters()}
